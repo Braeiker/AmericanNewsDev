@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+      <div *ngFor="let d of businessDisplay">
+        <a href="{{d.url}}">
+          <article class="card">
+            <div class="card__wrapper">
+              <figure class="card__feature">
+                <img [src]="d.urlToImage" class="card__img" alt="Immagine" width="100%">
+              </figure>
+              <div class="card__box">
+                <header class="card__item card__header">
+                  <h6 class="card__item card__item--small card__label">{{ d.author }}</h6>
+                  <h2 class="card__item card__item--small card__title">{{ d.title }}</h2>
+                </header>
+                <hr class="card__item card__divider">
+                <section class="card__item card__body">
+                  <p>{{ d.source.name }}</p>
+                </section>
+              </div>
+            </div>
+          </article>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  
