@@ -17,6 +17,7 @@ export class NewsApiServicesService {
 
   SportApi = 'https://newsapi.org/v2/top-headlines?country=us&category=sport&apiKey=c3e99250a5c34addaa955a4041a9a078';
 
+
   topHeading(): Observable<any> {
     return this._http.get(this.newsApiUrl);
   }
@@ -29,6 +30,11 @@ export class NewsApiServicesService {
   sportDisplay(): Observable<any> {
     return this._http.get(this.SportApi);
   }
+  checkImageAvailability(articles: any[]) {
+    for (const article of articles) {
+      if (article.urlToImage === null) {
+        console.log('Immagine non disponibile per:', article.title);
+      }
+    }
+  }
 }
-
-

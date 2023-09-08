@@ -9,5 +9,28 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
-    margin-left: 16%;
+    margin-left: 17%;
+}
+img.icon {
+    width: 10%;
+}
+
+a {
+    color: #1B3762;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.card__title {
+    color: #1B3762;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 188%;
+    color: #D71A20;
 }
